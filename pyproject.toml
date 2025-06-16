@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chaotic-exceptions"
+version = "0.0.1"
+authors = [
+    {name = "Paulius Klyvis", email = "paul@algorithmic.space"},
+]
+description = "A library for generating random exceptions to test system resilience"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Quality Assurance",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = ["testing", "chaos", "exception", "resilience", "fault-injection"]
+
+[project.urls]
+Homepage = "https://github.com/grafke/chaotic-exceptions"
+"Bug Reports" = "https://github.com/grafke/chaotic-exceptions/issues"
+"Source" = "https://github.com/grafke/chaotic-exceptions"
+
+[tool.setuptools.packages.find]
+include = ["chaotic_exceptions*"]
